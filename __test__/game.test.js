@@ -5,7 +5,7 @@ describe('App', () => {
   it('Contains the compiled JavaScript', async (done) => {
     fs.readFile('./public/main.js', 'utf8', (err, data) => {
       expect(err).toBe(null)
-      //expect(data).toMatchSnapshot()
+      //  expect(data).toMatchSnapshot()
       done()
     })
   })
@@ -22,7 +22,7 @@ describe('Game', () => {
   describe('Game', () => {
     it('Initializes with two players', async () => {
       expect(game.p1).toBe('Salem')
-      //expect(game.p2).toBe('Nate')
+      //  expect(game.p2).toBe('Nate')
     })
 
     it('Initializes with an empty board', async () => {
@@ -60,7 +60,7 @@ describe('Game', () => {
       const game = new Game(p1, p2)
       expect(game.player).toBe('Salem')
       game.nextPlayer()
-      //expect(game.player).toBe('Nate')
+      //  expect(game.player).toBe('Nate')
     })
   })
 
